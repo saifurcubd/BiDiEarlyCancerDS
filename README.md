@@ -1,15 +1,16 @@
-#**ClinicalEarlyCancerDF**
+#ClinicalEarlyCancerDF
 ClinicalEarlyCancerDF: a clinical early cancer detection framework using genome-wide cell-free DNA profiles and biomarkers from non-invasive liquid biopsy
 
 
 <p align="center">
 ClinicalEarlyCancerDF Study Overview
 </p>
-![ClinicalCancerDF-Studies](https://github.com/user-attachments/assets/927b164e-8371-4943-bb40-e922e1086670)
+![ClinicalCancerDF-Studies](https://github.com/user-attachments/assets/87f43692-8ff3-4622-b570-7ca7f9af8524)
+
 
 **Graphical Abstract**
 </p>
-![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/Grapichal Abstract.pdf)
+[GrapichalAbstract.pdf](https://github.com/user-attachments/files/20148213/GrapichalAbstract.pdf)
 
 **Abstract**
 Cancer is a complex disease that affects millions of people worldwide. It remains a significant challenge in today's healthcare landscape. Early cancer detection through non-invasive liquid biopsy (NLB) can enable early patient-focused interventions. Considering its clinical significance, we were motivated to address the challenge of enhancing early cancer prevention. We propose an ensemble-optimized machine learning framework (EOLF) for clinical early cancer detection (CECD) using cell-free DNA (cfDNA) fragmentation profiles, mutational signatures, and circulating biomarkers data from NLB, termed ClinicalEarlyCancerDF.
