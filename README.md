@@ -34,10 +34,10 @@ cell-free DNA Fragmentation
 Protein Biomarkers
 
 <p align="center">
-ClinicalEarlyCancerDF Study Overview
+ClinicalEarlyCancerDF Framework Overview
 </p>
 
-![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/ClinicalCancerDF-Studies.png)
+![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/EarlyCancerDF-figures.png)
 
 
 cfDNA mutational signatures
