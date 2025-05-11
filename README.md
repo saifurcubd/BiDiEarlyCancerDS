@@ -1,10 +1,11 @@
 #**ClinicalEarlyCancerDF**
 ClinicalEarlyCancerDF: a clinical early cancer detection framework using genome-wide cell-free DNA profiles and biomarkers from non-invasive liquid biopsy
 
+
 <p align="center">
 ClinicalEarlyCancerDF Study Overview
 </p>
-![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/ClinicalCancerDF-Studies.png)
+![ClinicalCancerDF-Studies](https://github.com/user-attachments/assets/927b164e-8371-4943-bb40-e922e1086670)
 
 **Graphical Abstract**
 </p>
