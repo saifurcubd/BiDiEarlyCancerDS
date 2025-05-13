@@ -5,6 +5,10 @@
 **Graphical Abstract**
 
 </p>
+
+<img width="1018" alt="System_performace" src="https://github.com/user-attachments/assets/aa48731f-d5c8-429f-8ba1-e36c3f31f67f" />
+
+
 ![alt text](https://github.com/user-attachments/assets/7acd9078-edf7-4b25-9123-8a6bb8e25cf5)
 
 <p align="center">
