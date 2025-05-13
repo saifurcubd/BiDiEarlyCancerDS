@@ -1,44 +1,95 @@
-# ClinicalEarlyCancerDF
-  ClinicalEarlyCancerDF: a clinical early cancer detection framework using genome-wide cell-free DNA profiles and biomarkers from non-invasive liquid biopsy
+# BiDiEarlyCancerDS Web Application Implementation for ClinicalEarlyCancerDF
+  Manuscript Title: ClinicalEarlyCancerDF: a clinical early cancer detection framework using genome-wide cell-free DNA profiles and biomarkers from non-invasive liquid biopsy
 
 
 **Graphical Abstract**
 
 </p>
-
 ![alt text](https://github.com/user-attachments/assets/7acd9078-edf7-4b25-9123-8a6bb8e25cf5)
 
 <p align="center">
 ClinicalEarlyCancerDF Study Overview
 </p>
 
-![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/ClinicalCancerDF-Studies.png)
 
+# BiDiEarlyCancerDS Web Application Implementation
+To facilitate clinical interpretation and real-time use of the ClinicalEarlyCancerDF framework, we developed BiDiEarlyCancerDS, a dynamic, platform-independent web application. The system allows users (e.g., clinicians or researchers) to input cfDNA fragmentation profiles, mutational signatures, and biomarker values from non-invasive liquid biopsy (NLB) data. The application provides immediate predictions for both binary early cancer detection (ECD) and localized cancer type classification, leveraging the optimized ensemble learning models described in this study.
 
-**Abstract**
+# Key Features:
+• Interactive prediction interface for binary and localized ECD
+• Visualization of individual patient results via ROC curves, prediction scores, and heatmaps
+• Upload functionality for DELFI-format data files
+• Real-time summary of classification confidence and cancer type probabilities
 
-Cancer is a complex disease that affects millions of people worldwide. It remains a significant challenge in today's healthcare landscape. Early cancer detection through non-invasive liquid biopsy (NLB) can enable early patient-focused interventions. Considering its clinical significance, we were motivated to address the challenge of enhancing early cancer prevention. We propose an ensemble-optimized machine learning framework (EOLF) for clinical early cancer detection (CECD) using cell-free DNA (cfDNA) fragmentation profiles, mutational signatures, and circulating biomarkers data from NLB, termed ClinicalEarlyCancerDF.
-Different clinical case study data are applied to evaluate the proposed ClinicalEarlyCancerDF method, which demonstrated superior performance compared to other methods and existing studies.  
-The first case study of the DELFI cohort revealed the result for binary CECD with an accuracy of 89.83\% (Sensitivity=95.81\% and AUC=0.948) and localized CECD with a median accuracy of 86.84\% (AUC=0.981) based on 10-fold cross-validation (CV). For the second case study of the same DELFI cohort through cfDNA mutation signature data, the proposed framework performed better than the recently published methods with an extended AUC value of 0.971 (Sensitivity=91.75\%) and an accuracy of 90.37\% in 10-fold CV. The case study of the second CancerSEEK cohort also performed better results for binary CECD with an accuracy of 99.34\% (AUC=0.999) and localized CECD with a median 94.85\% accuracy (AUC=0.996). For the robustness and generalizability of our approach, we conducted a 30\% independent data test and external validation using the LUCAS cohort and extracellular protein biomarker datasets. Both of these validations demonstrated consistently strong predictive performance. Lastly, extensive analysis revealed the underlying mechanism behind this method. Additionally, We implemented a platform-independent dynamic web application (BiDiEarlyCancerDS) to render the method's performance and facilitate cancer detection in the first case study of the DELFI cohort. The proposed optimized machine learning framework for CECD is well compared to existing methods across various evaluations and validation tests. This clinical cancer detection system with NLB can enhance the efficiency of early-stage cancer diagnosis and may enable cancer risk assessment for clinical oncologists and practitioners.
+The backend is implemented in Python using Flask, and the frontend is built with ReactJS and D3.js for interactive data visualizations. Model integration is facilitated through pre-trained models stored as serialized Python objects (.pkl), and the system uses RESTful API calls to manage data input/output.
 
+# Availability:
+The current version of BiDiEarlyCancerDS is available for research purposes upon request from the corresponding author. We plan to release a cloud-hosted version with secure authentication and logging support in a future update, along with user documentation and a Docker-based deployment script.
 
+# Future Development:
+We aim to integrate BiDiEarlyCancerDS with hospital EHR systems and initiate pilot usability studies with clinical partners. Enhancements will also include broader cancer type support and real-time decision support integration for early intervention planning.
 
-**keywords**
-
-Early cancer detection
-
-Liquid Biopsy
-
-cell-free DNA Fragmentation 
-
-Protein Biomarkers
-
-<p align="center">
-ClinicalEarlyCancerDF Framework Overview
 </p>
 
 ![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/EarlyCancerDF-figures.png)
 
+# BiDiEarlyCancerDS User Guide
+**1. Overview**
 
-cfDNA mutational signatures
+BiDiEarlyCancerDS is a web-based clinical support tool designed for early cancer detection using non-invasive liquid biopsy (NLB) data. The system implements the ClinicalEarlyCancerDF framework to provide binary and localized cancer prediction outcomes. It offers intuitive visualization, robust model predictions, and is intended to support clinicians in early diagnostic assessment.
+
+
+**2. User Interface Features**
+Figure S9: Input and Detection Interface
+
+    Data Upload Panel: Users can upload DELFI- or CancerSEEK-format datasets (CSV) including cfDNA fragmentation features, mutation signatures, or protein biomarkers.
+
+    Patient ID Selector: Allows selection of an individual patient record from the dataset.
+
+    Model Type Toggle: Users can switch between Binary Detection and Localized Detection modes.
+
+    Run Detection Button: Initiates real-time prediction using the trained ensemble models.
+
+Figure S10: Output Dashboard
+
+    Binary ECD Output: Displays predicted cancer status (Cancer / Healthy), along with model confidence score (probability).
+
+    Localized ECD Output: If “Cancer” is predicted, a bar graph ranks possible cancer types by probability.
+
+    ROC Curve Visualization: Plots the receiver operating characteristic curve for model confidence.
+
+    Heatmap (Figure S6): Visual representation of mutational signature contributions for the selected sample.
+
+**3. Use Case Examples**
+Figure S11: Binary ECD Scenarios
+
+    (a) Cancer Detection: The model flags a high-confidence cancer prediction.
+
+    (b) Normal Condition: The model predicts healthy status with strong confidence.
+
+    (c) Prevention Monitoring: Used for routine monitoring; can compare time-series entries.
+
+Figure S12: Localized ECD by Gender
+
+    (a) Female Patient Example: Shows cancer localization probabilities, such as high likelihood of breast or ovarian cancer.
+
+    (b) Male Patient Example: Distinguishes male-dominant cancer types like prostate or lung cancer.
+
+**4. Technical Requirements**
+
+    Browser: Chrome, Firefox, or Edge (latest versions)
+
+    Backend: Python Flask API (with pre-trained model objects)
+
+    Frontend: ReactJS interface, D3.js for plots
+
+    Deployment: Docker script provided for local or server deployment
+
+**5. Access and Availability**
+
+    The application is currently available upon request for academic and research use. To request access or deployment support, please contact the corresponding author.
+
+    A cloud-hosted version with extended data privacy, login support, and documentation is under development.
+
+
 
