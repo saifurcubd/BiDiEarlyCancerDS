@@ -9,8 +9,6 @@
 <img width="1018" alt="System_performace" src="https://github.com/user-attachments/assets/aa48731f-d5c8-429f-8ba1-e36c3f31f67f" />
 
 
-![alt text](https://github.com/user-attachments/assets/7acd9078-edf7-4b25-9123-8a6bb8e25cf5)
-
 <p align="center">
 ClinicalEarlyCancerDF Study Overview
 </p>
@@ -21,8 +19,11 @@ To facilitate clinical interpretation and real-time use of the ClinicalEarlyCanc
 
 # Key Features:
 • Interactive prediction interface for binary and localized ECD
+
 • Visualization of individual patient results via ROC curves, prediction scores, and heatmaps
+
 • Upload functionality for DELFI-format data files
+
 • Real-time summary of classification confidence and cancer type probabilities
 
 The backend is implemented in Python using Flask, and the frontend is built with ReactJS and D3.js for interactive data visualizations. Model integration is facilitated through pre-trained models stored as serialized Python objects (.pkl), and the system uses RESTful API calls to manage data input/output.
@@ -34,6 +35,8 @@ The current version of BiDiEarlyCancerDS is available for research purposes upon
 We aim to integrate BiDiEarlyCancerDS with hospital EHR systems and initiate pilot usability studies with clinical partners. Enhancements will also include broader cancer type support and real-time decision support integration for early intervention planning.
 
 </p>
+
+![alt text](https://github.com/user-attachments/assets/7acd9078-edf7-4b25-9123-8a6bb8e25cf5)
 
 ![alt text](https://github.com/saifurcubd/BiDiEarlyCancerDS/blob/main/EarlyCancerDF-figures.png)
 
